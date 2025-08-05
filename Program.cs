@@ -1,8 +1,16 @@
+using JobTrack360.DataEF;
+using JobTrack360.Repositories;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers(); //dependancy injection for controllers
+
+builder.Services.AddDbContext<ApplicationDbContext>(opt => opt.UseInMemoryDatabase("JobTrackDb")); // Use InMemoryDatabase for simplicity
+builder.Services.AddScoped<IJobApplicationRepository, JobApplicationRepository>(); // Register the repository
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
