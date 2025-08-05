@@ -2,11 +2,34 @@
 {
     public class JobApplication
     {
-        public int Id { get; set; } // Unique identifier for the job application
-        public string CompanyName { get; set; } // Name of the company where the application was submitted
-        public string Position { get; set; }    // Position applied for
-        public string Notes { get; set; } // Additional notes about the application
-        public string Status { get; set; } // Current status of the application (Interview/Offer/Rejected)    
-        public DateTime DateApplied { get; set; } // Date when the application was submitted
+        /// <summary>
+        /// Unique identifier for the job application
+        /// </summary>
+        public int Id { get; set; }
+
+        /// <summary>
+        /// Name of the company where the application was submitted
+        /// </summary>
+        public string CompanyName { get; set; }
+
+        /// <summary>
+        /// Position applied for
+        /// </summary>
+        public string Position { get; set; }
+
+        /// <summary>
+        /// Additional notes about the application
+        /// </summary>
+        public string Notes { get; set; }
+
+        /// <summary>
+        /// Current status of the application Ex. (Interview/Offer/Rejected) 
+        /// </summary>
+        public string Status { get; set; }
+
+        /// <summary>
+        /// Date when the application was submitted
+        /// </summary>
+        public DateTime DateApplied { get; set; }
     }
 }
