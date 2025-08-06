@@ -1,5 +1,6 @@
-﻿using JobTrack360.DataEF;
-using JobTrack360.Models;
+﻿using JobTrack360.Application.Interfaces;
+using JobTrack360.Domain.Entities;
+using JobTrack360.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace JobTrack360.Repositories

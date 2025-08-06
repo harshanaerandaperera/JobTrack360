@@ -1,4 +1,4 @@
-﻿namespace JobTrack360.Models
+﻿namespace JobTrack360.Domain.Entities
 {
     public class JobApplication
     {

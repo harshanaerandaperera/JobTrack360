@@ -1,7 +1,7 @@
-﻿using JobTrack360.Models;
+﻿using JobTrack360.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace JobTrack360.DataEF
+namespace JobTrack360.Infrastructure.Data
 {
     public class ApplicationDbContext : DbContext
     {

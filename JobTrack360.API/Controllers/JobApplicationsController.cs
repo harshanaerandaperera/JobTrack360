@@ -1,5 +1,6 @@
-﻿using JobTrack360.Models;
-using JobTrack360.Repositories;
+﻿
+using JobTrack360.Application.Interfaces;
+using JobTrack360.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace JobTrack360.Controllers

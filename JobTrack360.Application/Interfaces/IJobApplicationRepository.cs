@@ -1,6 +1,6 @@
-﻿using JobTrack360.Models;
+﻿using JobTrack360.Domain.Entities;
 
-namespace JobTrack360.Repositories
+namespace JobTrack360.Application.Interfaces
 {
     public interface IJobApplicationRepository
     {
