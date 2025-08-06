@@ -65,7 +65,11 @@ namespace JobTrack360.Controllers
             if (!ModelState.IsValid) { 
                 return BadRequest(ModelState);
             }
-          
+            // If client didn't send the Job Application date, Set the Current Date
+            if (application.DateApplied == default)  
+            {
+                application.DateApplied = DateTime.UtcNow;
+            }
             var createdApplication = await _repo.AddAsync(application);
             return CreatedAtAction(nameof(GetById), new { id = createdApplication.Id }, createdApplication);
         }

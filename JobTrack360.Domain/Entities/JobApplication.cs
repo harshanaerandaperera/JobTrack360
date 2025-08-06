@@ -30,13 +30,13 @@ namespace JobTrack360.Domain.Entities
         /// <summary>
         /// Current status of the application (Applied/Interview/Offer/Rejected) 
         /// </summary>
-        [Required]
+        [Required(ErrorMessage = "JobStatus is Required")]
         [EnumDataType(typeof(JobStatus))]
         public JobStatus Status { get; set; }
 
         /// <summary>
         /// Date when the application was submitted
         /// </summary>
-        public DateTime DateApplied { get; set; }   = DateTime.UtcNow; // Set the date when the application was submitted
+        public DateTime DateApplied { get; set; }  
     }
 }
