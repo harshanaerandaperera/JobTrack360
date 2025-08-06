@@ -65,7 +65,7 @@ namespace JobTrack360.Controllers
             if (!ModelState.IsValid) { 
                 return BadRequest(ModelState);
             }
-            application.DateApplied = DateTime.UtcNow; // Set the date when the application was submitted
+          
             var createdApplication = await _repo.AddAsync(application);
             return CreatedAtAction(nameof(GetById), new { id = createdApplication.Id }, createdApplication);
         }

@@ -4,6 +4,7 @@ using JobTrack360.Infrastructure.Data;
 using JobTrack360.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,6 +27,7 @@ builder.Services.AddSwaggerGen(options =>
     {
         Title = "JobTrack360 API",
         Version = "v1",
+        Contact = new OpenApiContact { Email = "harshanatxn@gmail.com" },
         Description = "API for managing job applications JobTrack360 | Developed by Harshana Perera <harshanatxn@gmail.com>"
     });
 });
