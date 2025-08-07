@@ -81,7 +81,7 @@ JobTrack360/
 
 ### 4. 🛠️ Run the Backend
 ```bash
-	dotnet run
+dotnet run
 ```
 
 ### 5. 🌐 API Endpoints
@@ -145,9 +145,9 @@ jobtrack360.ui/
 
 ### 3. 🛠️ Run the Frontend
 ```bash
-	cd jobtrack360.ui
-	npm install
-	npm start
+cd jobtrack360.ui
+npm install
+npm start
 ```
 By default, the app will be served at http://localhost:3000
 
@@ -178,3 +178,5 @@ You are Done ✅ !!
 **Harshana Perera**  
 **Software Engineer | Developer | Tech Enthusiast**  
 [LinkedIn](https://www.linkedin.com/in/harshanaerandaperera/)
+
+This project was developed using Monorepo architecture, with both the backend (ASP.NET Core Web API) and frontend (React) in a single repository for streamlined development and deployment.
