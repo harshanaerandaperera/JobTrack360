@@ -1,7 +1,8 @@
 import axios from 'axios';
 
+// Use empty baseURL since nginx will proxy /api requests to backend
 const api = axios.create({
-  baseURL: 'https://localhost:7296', // Backend server 
+  baseURL: '', // Empty for same-origin requests (nginx proxies /api to backend)
 });
 
 export const getApplications = () => api.get('/api/JobApplications');
