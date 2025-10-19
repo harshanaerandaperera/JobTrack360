@@ -1,0 +1,47 @@
+# Git files
+.git
+.gitignore
+.gitattributes
+
+# IDE files
+.vs
+.vscode
+.idea
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+**/bin/
+**/obj/
+**/build/
+**/dist/
+
+# Frontend
+**/node_modules/
+jobtrack360.ui/build/
+jobtrack360.ui/.env.local
+jobtrack360.ui/.env.development.local
+jobtrack360.ui/.env.test.local
+jobtrack360.ui/.env.production.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Documentation
+README.md
+*.md
+assets/
+
+# Docker files (don't include in image)
+docker-compose*.yml
+Dockerfile
+.dockerignore
