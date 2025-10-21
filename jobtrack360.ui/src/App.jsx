@@ -61,7 +61,7 @@ const App = () => {
 
   return (
     <div className="app-container">
-      <h1>JobTrack360 | Job Application Tracker</h1>
+      <h1>JobTrack360 | Job Application Tracker : V 1.0</h1>
       <ApplicationForm
         onSubmit={handleSubmit}
         existingData={editingApp}
